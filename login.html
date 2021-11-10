@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header lock-padding">
+            <div class="header__container">
+                <div class="header__wrap">
+                    <a href="#popup-share" class="header__button header__button--participation popup-link">Как участвовать?</a>
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="" class="logo__img">
+                    </a>
+                    <a href="registration.html" class="header__button header__button--authorization">Регистрация / Войти</a>
+                </div>
+            </div>
+        </header>
+        <div class="main main-puprle">
+            <div class="container">
+                <div class="main__wrap">
+                    <div class="login">
+                        <span class="login__title">Войти</span>
+                        <form class="login__form" method="POST">
+                            <div class="login__list">
+                                <div class="field login__field">
+                                    <label class="field__label" for="phone">Мобильный телефон</label>
+                                    <div class="field__wrap">
+                                        <span class="field__phone">+7</span>
+                                        <div class="field__group field__group--registration">
+                                            <input class="field__input" name="phone" type="text" placeholder="Мобильный телефон">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field login__field">
+                                    <label class="field__label" for="">Пароль</label>
+                                    <div class="field__group">
+                                        <input class="field__input" type="password" id="password-input" placeholder="Введите пароль" name="password">
+                                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="login__password">Забыли пароль?</a>
+                            <button type="submit" class="login__button">Войти в систему</button>                               
+                        </form>
+                        <a href="registration.html" class="login__link">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+           <div class="footer__top">
+               <div class="footer__container">
+                   <div class="footer__wrap">
+                    <a href="#" class="footer__button">Конфиденциальность и безопасность</a>
+                    <a href="#popup-rules" class="footer__button popup-link">Правила акции «На море хочу!»</a>
+                    <a href="#" class="footer__button">Не получается зарегистрироваться</a>
+                   </div>
+               </div>
+           </div>
+           <div class="footer__bottom">
+               <div class="footer__bottom-line"></div>
+               <div class="social">
+                   <a href="#" class="social__link">
+                       <img src="images/social-img1.png" alt="" class="social__link-img">
+                   </a>
+                   <a href="#" class="social__link">
+                       <img src="images/social-img2.png" alt="" class="social__link-img">
+                   </a>
+                   <a href="#" class="social__link">
+                       <img src="images/social-img3.png" alt="" class="social__link-img">
+                   </a>
+                   <a href="#" class="social__link">
+                       <img src="images/social-img4.png" alt="" class="social__link-img">
+                   </a>
+               </div>
+               <div class="footer__bottom-line"></div>
+           </div>
+        </footer>
+        <div id="popup-share" class="popup popup-share">
+            <div class="popup__body popup__body--share">
+                <div class="popup__content popup__content--share">
+                    <a href="#header" class="popup__close close-popup">
+                        <img src="images/close.svg" alt="" class="popup__close-img">
+                    </a>
+                    <div class="share">
+                        <span class="share__title">Как участвовать в розыгрыше 100000 ₽ на путешествие мечты и подарков от арендаторов</span>
+                        <div class="share__body">
+                            <div class="share__line"></div>
+                            <div class="share-item">
+                                <img src="images/share-img1.png" alt="" class="share-item__img">
+                                <div class="share-item__circle">
+                                    <span class="share-item__circle-text">1</span>
+                                </div>
+                                <p class="share-item__text">Зарегистрируйтесь в Программе Лояльности ТРК «КОЛЛАЖ»</p>
+                            </div>
+                            <div class="share-item">
+                                <img src="images/share-img2.png" alt="" class="share-item__img">
+                                <div class="share-item__circle">
+                                    <span class="share-item__circle-text">2</span>
+                                </div>
+                                <p class="share-item__text">Совершайте покупки в «КОЛЛАЖе» на сумму от 1000 рублей</p>
+                            </div>
+                            <div class="share-item">
+                                <img src="images/share-img3.png" alt="" class="share-item__img">
+                                <div class="share-item__circle">
+                                    <span class="share-item__circle-text">3</span>
+                                </div>
+                                <p class="share-item__text">Регистрируйте чеки на сайте <a href="promo.collage.com" class="share__link">promo.collage.com</a> или стойке регистрации</p>
+                            </div>
+                            <div class="share-item">
+                                <img src="images/share-img4.png" alt="" class="share-item__img">
+                                <div class="share-item__circle">
+                                    <span class="share-item__circle-text">4</span>
+                                </div>
+                                <p class="share-item__text">Участвуйте в финальном розыгрыше 1 августа 2021 в 13:00</p>
+                            </div>
+                            <div class="share-item">
+                                <img src="images/share-img5.png" alt="" class="share-item__img">
+                                <div class="share-item__circle">
+                                    <span class="share-item__circle-text">5</span>
+                                </div>
+                                <p class="share-item__text">Выигрывайте! При себе обязательно иметь все чеки и паспорт</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="popup-rules" class="popup popup-rules">
+            <div class="popup__body">
+                <div class="popup__content popup__content--rules">
+                    <a href="#header" class="popup__close close-popup">
+                        <img src="images/close.svg" alt="" class="popup__close-img">
+                    </a>
+                    <div class="rules">
+                        <div class="rules__body">
+                            <span class="rules__title">ПРАВИЛА СТИМУЛИРУЮЩЕЙ АКЦИИ «На море хочу!»</span>
+                            <div class="rules__border">
+                                <div class="rules__text">
+                                    <ol class="rules__list">
+                                        <li class="rules__item"><span class="rules__item--bold">ОБЩИЕ ПОЛОЖЕНИЯ</span>
+                                            <ol class="rules__list">
+                                                <li class="rules__item">Организатором стимулирующей акции «На море хочу!» в период с 15 мая 2021 года по 01 августа 2021 года является ООО «Инвест-Евро-Пенза»</li>
+                                                <li class="rules__item">Фактический адрес места проведения розыгрыша – г. Пенза ТРК «Коллаж», пр. Строителей, 1В. Территория проведения акции: г. Пенза, ТРК КОЛЛАЖ, все этажи</li>
+                                                <li class="rules__item">Настоящие Условия размещаются на сайте <a class="rules__link" href="http://www.mallcollage.ru">http://www.mallcollage.ru</a> и в официальной группе в контакте <a class="rules__link" href="vk.com/penza.collage">vk.com/penza.collage</a>.</li>
+                                                <li class="rules__item">Факт участия в стимулирующей акции подразумевает, что все участники соглашаются с настоящими правилами.</li>
+                                                <li class="rules__item">К участию в стимулирующей акции и розыгрышу ценных призов допускаются дееспособные физические лица старше 18 лет, постоянно проживающие на территории Российской Федерации, совершившие покупки в ТРК «Коллаж» в период с 15 мая 2021 по 01 августа 2021 включительно, что подтверждается чеками, и заполнившие купон участника.</li>
+                                                <li class="rules__item">Ограничения участия в АКЦИИ: к участию в Акции не допускаются работники Организатора, магазинов, находящихся и осуществляющих свою деятельность в ТРК, члены их семей, аффилированные лица, члены их семей.</li>
+                                                <li class="rules__item">Срок проведения акции «На море хочу!» включает в себя сроки следующих этапов:<br>
+                                                    <ul class="rules__sublist">
+                                                        <li class="rules__subitem">Совершение посетителями ТРК «Коллаж» покупок в период 15.05.2021 до 01.08.2021 13:00;</li>
+                                                        <li class="rules__subitem">Обмен чеков от 1000 (тысячи) руб. на купоны, но не более 5 (пяти) на 1 (один) чек на стойки регистрации;</li>
+                                                        <li class="rules__subitem">Режим работы стойки регистрации:<br>
+                                                            По четвергам и пятницам: 18:00 – 21:00;<br>
+                                                            По субботам и воскресеньям: 12:00 – 19:00;<br>
+                                                            01.08.2021: 10:00 – 13:00</li>
+                                                        <li class="rules__subitem">Заполнение купонов и опускание в лототрон.</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="rules__item">Организатором стимулирующей акции «На море хочу!» в период с 15 мая 2021 года по 01 августа 2021 года является ООО «Инвест-Евро-Пенза»</li>
+                                                <li class="rules__item">Фактический адрес места проведения розыгрыша – г. Пенза ТРК «Коллаж», пр. Строителей, 1В. Территория проведения акции: г. Пенза, ТРК КОЛЛАЖ, все этажи</li>
+                                                <li class="rules__item">Настоящие Условия размещаются на сайте <a class="rules__link" href="http://www.mallcollage.ru">http://www.mallcollage.ru</a> и в официальной группе в контакте <a class="rules__link" href="vk.com/penza.collage">vk.com/penza.collage</a>.</li>
+                                                <li class="rules__item">Факт участия в стимулирующей акции подразумевает, что все участники соглашаются с настоящими правилами.</li>
+                                                <li class="rules__item">К участию в стимулирующей акции и розыгрышу ценных призов допускаются дееспособные физические лица старше 18 лет, постоянно проживающие на территории Российской Федерации, совершившие покупки в ТРК «Коллаж» в период с 15 мая 2021 по 01 августа 2021 включительно, что подтверждается чеками, и заполнившие купон участника.</li>
+                                                <li class="rules__item">Ограничения участия в АКЦИИ: к участию в Акции не допускаются работники Организатора, магазинов, находящихся и осуществляющих свою деятельность в ТРК, члены их семей, аффилированные лица, члены их семей.</li>
+                                                <li class="rules__item">Срок проведения акции «На море хочу!» включает в себя сроки следующих этапов:<br>
+                                                    <ul class="rules__sublist">
+                                                        <li class="rules__subitem">Совершение посетителями ТРК «Коллаж» покупок в период 15.05.2021 до 01.08.2021 13:00;</li>
+                                                        <li class="rules__subitem">Обмен чеков от 1000 (тысячи) руб. на купоны, но не более 5 (пяти) на 1 (один) чек на стойки регистрации;</li>
+                                                        <li class="rules__subitem">Режим работы стойки регистрации:<br>
+                                                            По четвергам и пятницам: 18:00 – 21:00;<br>
+                                                            По субботам и воскресеньям: 12:00 – 19:00;<br>
+                                                            01.08.2021: 10:00 – 13:00</li>
+                                                        <li class="rules__subitem">Заполнение купонов и опускание в лототрон.</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rules__footer">
+                            <p class="rules__footer-text">2021 «КОЛЛАЖ»</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
